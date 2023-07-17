@@ -5,7 +5,7 @@ import { HeroCard } from './components/HeroCard';
 
 export const MarvelApp = () => {
 
-    const [hero, setHero] = useState(['Iron Man', 'Spider Man']);
+    const [hero, setHero] = useState(['Iron Man']);
 
     const onAddHero = ( newHero) => {
         setHero( [newHero , ...hero]);

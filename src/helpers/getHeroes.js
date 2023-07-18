@@ -6,8 +6,10 @@ export const getHero = async(hero) =>{
 
     const heroes = data.results.map(results=>({
         id: results.id,
+        name: results.name,
         path: results.thumbnail.path,
-        extension: results.thumbnail.extension
+        extension: results.thumbnail.extension,
+        isFavourite: false
     }))
     return heroes;
 }
